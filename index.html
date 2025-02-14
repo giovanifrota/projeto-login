@@ -10,15 +10,15 @@
     <main>
         <h1>Faça seu Login</h1>
 
-        <form action="cadastro.java" method="post">
+        <form action="cadastro.java" method="post" autocomplete="on">
             <div>
                 <label for="iemail">Email</label>
-                <input type="email" name="email" id="iemal" required>
+                <input type="email" name="email" id="iemal" required autocomplete="email">
             </div>
 
             <div>
                 <label for="isenha">Senha</label>
-                <input type="password" name="senha" id="isenha" required minlength="5" max="20">
+                <input type="password" name="senha" id="isenha" required minlength="5" max="20" autocomplete="current-password">
 
                 <a href="#">esqueci mminha senha</a>
                 <input type="submit" value="Entrar">
