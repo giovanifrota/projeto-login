@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/*typical device breakpoints
+Pequenas telas: ate 600px
+Celular: de 600px ate 768px
+Tablet: 768px ate 992px
+Desktop: 992px ate 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    main{
+        background: linear-gradient(to right, black 60%, transparent 50%), url(../imagem/imagem-fundo-login.png) no-repeat center;
+        background-size: cover; 
+    }
+
+    form > div > input.dados{
+        width: 50%;
+    }
+
+    form > div > a#right{
+        position: relative;
+        top: 50%;
+        right: 50%;
+    }
+
+    form > div > input[type="submit"]{
+        width: 55%;
+    }
+
+    form > div > a{
+        position: relative;
+        top: 50%;
+        right: 20%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    main{
+        background: linear-gradient(to right, black 60%, transparent 50%), url(../imagem/imagem-fundo-login.png) no-repeat center;
+        background-size: cover; 
+        width:950px;
+        height: 60%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    form > div > input.dados{
+        width: 50%;
+    }
+
+    form > div > a#right{
+        position: relative;
+        top: 50%;
+        right: 50%;
+    }
+
+    form > div > input[type="submit"]{
+        width: 55%;
+    }
+
+    form > div > a{
+        position: relative;
+        top: 50%;
+        right: 20%;
+    }
+}
