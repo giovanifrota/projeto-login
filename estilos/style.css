@@ -1,1 +1,85 @@
 @charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    background-color: #1f1f1f;
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    background-color: black;
+    background-size: cover;
+    width: 90%;
+    height: 80vh;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin:50px 0 0 30px;
+    position: absolute;
+}
+main > h1{
+    color: #d3d3d3;
+    padding: 10px;
+    margin: 25px;
+}
+
+form > div > label{
+    color: gray;
+    display: block;
+    font-size: 0.8em;
+}
+
+form > div > input.dados{
+    background-color: #111112;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    width: 60%;
+    transition: box-shadow 0.3s;
+}
+
+form > div > input:hover{
+    border-color:#52325b;
+    box-shadow: 1px 1px 10px 4px #52325b;
+    outline: none;
+}
+form > div > input:focus{
+    border-color:#52325b;
+    box-shadow: 1px 1px 10px 4px #52325b;
+    outline: none;
+}
+form > div > a#right{
+    color: #6A6E76;
+    display: block;
+    text-align: right;
+    position: relative;
+    top: 50%;
+    right: 15%;
+    margin: 20px 0;
+}
+form > div > input[type="submit"]{
+    background: linear-gradient(to right,#6955CC,#AE51C3,#E79594 );
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bolder;
+    width: 65%;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+form > div > a{
+    color: #6A6E76;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
