@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaqueries.css">
     <title>Login</title>
 </head>
 <body>
-    
+    <main>
+        <h1>Faça seu Login</h1>
+
+        <form action="cadastro.java" method="post">
+            <div>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemal" required class="dados">
+            </div>
+
+            <div>
+                <label for="isenha">Senha</label>
+                <input type="password" name="senha" id="isenha" required minlength="5" max="20" class="dados">
+
+                <a href="#" id="right">esqueci minha senha</a>
+                <input type="submit" value="Entrar" class="botao">
+                <a href="#">ainda não tenho uma conta</a>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
